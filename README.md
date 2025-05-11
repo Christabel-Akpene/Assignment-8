@@ -1,17 +1,34 @@
-# COVID-19 Analysis Report
+# COVID-19 Analysis Report (PLP Week 8)
 
-- A report on the COVID-19 dataset from the PLP's week 8 assignment.
+- A data analysis project using the OWID COVID-19 dataset to examine global trends in cases, deaths, testing, and vaccination rollouts. The analysis focuses on selected countries to understand the pandemic's progression and response across different regions.
 
-**Dataset:** [OWID - COVID-19]  
-**Total entries:** 429,435 rows | 69 columns  
-**Selected columns used for analysis:** ["location", "date", "total_cases", "total_deaths", "new_deaths",
-"total_vaccinations", "total_tests", "new_tests", "positive_rate",
-"people_vaccinated", "people_fully_vaccinated"]
+
+##  Objectives
+
+- To understand the progression of COVID-19 cases and deaths across various countries.
+- To analyze vaccination rollouts and their relationship to cases recorded.
+- To visualize trends using line charts, bar charts and heatmaps.
+- To derive insights from the data.
+
+
+##  Tools & Libraries Used
+
+- **Python** 
+- **Pandas** – for data manipulation and cleaning
+- **Matplotlib** – for visualizations
+- **Seaborn** – for plots and heatmaps
+
+## ⚙️ How to Run the Project
+
+1. Read the dataset.
+2. Run the Jupyter Notebook (`covid_analysis.ipynb`) in your preferred Python environment.
+3. Install required libraries using:
+   ```bash
+   pip install pandas matplotlib seaborn plotly
 
 
 ## Data Cleaning
 
-- There is a huge gap between the number of vaccinations and tests which were done verses the total number of cases recorded. There were a lot of missing values.
 - Following countries were selected for the analysis:   **United States, India, Kenya, Ghana, China, Brazil, Nigeria, Australia, Sweden, Japan, Russia**
 
 - Used forward fill(ffill) for cummulative series over time and mean for daily metries per country for the rest of the data for filling in missing values.

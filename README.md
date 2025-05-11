@@ -18,7 +18,7 @@
 - **Matplotlib** – for visualizations
 - **Seaborn** – for plots and heatmaps
 
-## ⚙️ How to Run the Project
+##  How to Run the Project
 
 1. Read the dataset.
 2. Run the Jupyter Notebook (`covid_analysis.ipynb`) in your preferred Python environment.
